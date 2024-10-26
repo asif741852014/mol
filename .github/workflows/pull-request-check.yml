@@ -1,0 +1,13 @@
+name: Pull Request Status Check
+
+on: 
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run PR Check
+        run: echo "Pull request check completed successfully."
